@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediarfy - Câmara de Mediação e Arbitragem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mediarfyBlue: '#5792BF',
+            whatsappGreen: '#25D366'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-black via-gray-900 to-black text-white font-sans">
+
+  <!-- Container principal -->
+  <div class="min-h-screen flex flex-col justify-center items-center px-4 py-8">
+
+    <!-- Logo e Título -->
+    <div class="text-center mb-10 animate-fade-in">
+      <!-- Logo -->
+      <img src="img/logo_sem_fundo.png" alt="Logo Mediarfy" class="mx-auto w-56 mb-4 drop-shadow-lg hover:scale-110 transition duration-300">
+      
+      <!-- Nome -->
+      <h1 class="text-6xl font-extrabold tracking-wide drop-shadow-lg">
+        MEDIAR<span class="text-mediarfyBlue">FY</span>
+      </h1>
+      <p class="text-lg mt-3 text-gray-300 tracking-wide">
+        Câmara de Mediação e Arbitragem Extrajudicial
+      </p>
+      <p class="italic text-sm mt-2 text-gray-400">
+        "Resolvendo conflitos com rapidez, segurança e respaldo legal."
+      </p>
+    </div>
+
+    <!-- Card de Contato -->
+    <div class="bg-gray-800 bg-opacity-70 rounded-2xl p-8 shadow-2xl backdrop-blur-sm w-full max-w-md text-center border border-gray-700">
+      <h2 class="text-2xl font-semibold text-mediarfyBlue mb-6">Entre em Contato</h2>
+      
+      <!-- WhatsApp -->
+      <a href="https://wa.me/5581979077289" target="_blank" 
+         class="flex items-center justify-center gap-3 bg-whatsappGreen text-black font-bold py-3 px-6 rounded-xl hover:scale-105 transition duration-300 shadow-lg mb-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6">
+        (81) 97907-7289
+      </a>
+
+
+      <!-- Site -->
+      <a href="https://mediarfy.netlify.app" target="_blank" 
+         class="block text-xl font-bold py-3 px-6 rounded-xl bg-gradient-to-r from-mediarfyBlue to-blue-800 hover:scale-105 transition duration-300 shadow-lg">
+        🌐 Visite nosso site
+      </a>
+      
+      <p class="text-gray-400 italic mt-4">Atendemos em todo o Brasil!</p>
+    </div>
+
+  </div>
+
+  <!-- Estilos extras -->
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-out forwards;
+    }
+  </style>
+
+</body>
+</html>
